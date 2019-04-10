@@ -36,3 +36,11 @@ void Lista::imprimirResultados() {
 	}
 
 }
+void Lista::calcularSalarioEmpleados() {
+	curr = head;
+	while (curr != NULL) {
+		curr->empleado->calcularSalario();
+		curr = curr->next;
+	}
+
+}

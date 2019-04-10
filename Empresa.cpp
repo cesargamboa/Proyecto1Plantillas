@@ -18,3 +18,7 @@ void Empresa::mostrarListaDeEmpleados() {
 	std::cout << "Ingresando a lista de empleados";
 	listaEmpleados.imprimirResultados();
 }
+void Empresa::calcularSalarios(){
+    std::cout << "intentando calcula salario";
+    listaEmpleados.calcularSalarioEmpleados();
+}

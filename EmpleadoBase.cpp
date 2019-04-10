@@ -1,7 +1,8 @@
 #include "EmpleadoBase.h"
 #include <iostream>
 
-EmpleadoBase::EmpleadoBase()
+EmpleadoBase::EmpleadoBase(std::string name, int ced, double sal, int identification)
+:salarioBruto(sal), nombre(name), cedula(ced), id(identification)
 {
 }
 

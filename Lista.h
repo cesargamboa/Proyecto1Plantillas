@@ -6,6 +6,7 @@ public:
 	Lista();
 	void AddNode(EmpleadoBase* addData);
 	void imprimirResultados();
+        void calcularSalarioEmpleados();
 
 private:
 	typedef  struct nodeEmp {

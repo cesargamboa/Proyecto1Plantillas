@@ -15,5 +15,6 @@ public:
 	Empresa();
 	void agregarEmpleado(EmpleadoBase* empleado);
 	void mostrarListaDeEmpleados();
+        void calcularSalarios();
 	~Empresa();
 };
