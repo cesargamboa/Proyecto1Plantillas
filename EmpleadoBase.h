@@ -9,11 +9,11 @@ class EmpleadoBase
 protected:
     double salarioNeto;
     double salarioBruto;
+         Contrato* contratoEmpleado;
 private:
 	std::string nombre;
         
 	int cedula;
-                    Contrato* contratoEmpleado;
                     
                     // identificacion unica de empleado
                     // esto para luego poder modificarlo
@@ -23,6 +23,8 @@ public:
                     virtual void calcularSalario() = 0;
 	void toString();
                     void setDetallesContrato(int, int, int , std::string);
+                    int obtenerBeneficios();
                     void modifcarTipoContrato(std::string);
+                    void setNombre(std::string);
 	~EmpleadoBase();
 };

@@ -13,11 +13,18 @@ public:
     Contrato(const Contrato& orig);
     void cambiarTipoDeContrato(std::string);
     void setTipoContrato(std::string);
+    void setAhorroNavideno();
+    void setSalarioEscolar();
+    int getBeneficios();
     void setInicioContrato(int, int, int);
     void setFechaClausuraContrato(Fecha*);
     virtual ~Contrato();
 private:
     std::string tipoDeContrato;
+    
+    int ahorronNavideno;
+    int salarioEscolar;
+    
     Fecha* fechaInicioContrato;
     Fecha* fechaCierreContrato;
 };

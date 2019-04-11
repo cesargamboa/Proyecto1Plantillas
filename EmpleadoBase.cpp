@@ -21,3 +21,6 @@ void EmpleadoBase::setDetallesContrato(int d,  int m, int y, std::string tipo){
     contratoEmpleado->setInicioContrato(d, m, y);
     contratoEmpleado->setTipoContrato(tipo);
 }
+void EmpleadoBase::setNombre(std::string n){
+    nombre = n;
+}

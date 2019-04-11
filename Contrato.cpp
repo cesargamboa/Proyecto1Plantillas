@@ -15,6 +15,8 @@
 
 Contrato::Contrato()
 {
+    salarioEscolar = 0;
+    ahorronNavideno = 0;
 }
 
 Contrato::Contrato(const Contrato& orig) {
@@ -30,4 +32,7 @@ void Contrato::setTipoContrato(std::string tipo){
 }
 void Contrato::setInicioContrato(int day, int mes, int year){
     fechaInicioContrato = new Fecha(day, mes, year);
+}
+int Contrato::getBeneficios(){
+    return ahorronNavideno + salarioEscolar;
 }
