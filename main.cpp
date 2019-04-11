@@ -15,7 +15,7 @@ int main()
 	systemsCompany.agregarEmpleado(&empleado);
 	systemsCompany.agregarEmpleado(&empleado2);
 	systemsCompany.mostrarListaDeEmpleados();
-        systemsCompany.calcularSalarios();
+                    systemsCompany.calcularSalarios();
 	
 	return 0;
 

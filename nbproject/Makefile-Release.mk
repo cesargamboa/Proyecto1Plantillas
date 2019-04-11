@@ -35,10 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Contrato.o \
 	${OBJECTDIR}/EmpleadoBase.o \
 	${OBJECTDIR}/EmpleadoPlanilla.o \
 	${OBJECTDIR}/EmpleadoServiciosProfesionales.o \
 	${OBJECTDIR}/Empresa.o \
+	${OBJECTDIR}/Fecha.o \
 	${OBJECTDIR}/Lista.o \
 	${OBJECTDIR}/main.o
 
@@ -67,6 +69,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/proyecto1plantillas: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/proyecto1plantillas ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Contrato.o: Contrato.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Contrato.o Contrato.cpp
+
 ${OBJECTDIR}/EmpleadoBase.o: EmpleadoBase.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -86,6 +93,11 @@ ${OBJECTDIR}/Empresa.o: Empresa.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Empresa.o Empresa.cpp
+
+${OBJECTDIR}/Fecha.o: Fecha.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fecha.o Fecha.cpp
 
 ${OBJECTDIR}/Lista.o: Lista.cpp
 	${MKDIR} -p ${OBJECTDIR}
