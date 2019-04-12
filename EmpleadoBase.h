@@ -24,7 +24,10 @@ public:
                     virtual void calcularSalario() = 0;
 	void toString();
                     void setDetallesContrato(int, int, int , std::string);
+                    std::string  getNombre();
+                    int getCedula();
                     int obtenerBeneficios();
+                    void guardarEmpleadoEnReporte();
                     void modifcarTipoContrato(std::string);
                     void setNombre(std::string);
                     void setApellido(std::string);

@@ -8,7 +8,8 @@ extern "C" {
 
     void devolverMenu();
     void devolverMenuCreacionEmpleado();
-
+    void imprimirMensajeBienvenida();
+    void imprimirMensajeDePagoPlanilla();
 #ifdef __cplusplus
 }
 #endif

@@ -15,6 +15,7 @@ public:
 	Empresa(std::string);
 	void agregarEmpleado(EmpleadoBase* empleado);
 	void mostrarListaDeEmpleados();
+                    void eliminarEmpleado(int);
                     void setDireccion(std::string);
                     void setTelefono(std::string);
                     void toString();

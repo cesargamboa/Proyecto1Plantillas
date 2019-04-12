@@ -14,5 +14,5 @@ EmpleadoPlanilla::~EmpleadoPlanilla()
 void EmpleadoPlanilla::calcularSalario(){
     EmpleadoPlanilla::salarioNeto = EmpleadoPlanilla::salarioBruto - (EmpleadoPlanilla::salarioBruto*cargasSociales)-(EmpleadoPlanilla::salarioBruto*ahorroObligatorio);
     
-    std::cout << "Calculando salario del empleado de planilla\n"<<EmpleadoPlanilla::salarioNeto;
+    std::cout << EmpleadoPlanilla::getNombre()<< " | "<< EmpleadoPlanilla::getCedula() << "  | " <<EmpleadoPlanilla::salarioNeto << "\n";;
 }

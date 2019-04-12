@@ -13,5 +13,5 @@ EmpleadoServiciosProfesionales::~EmpleadoServiciosProfesionales()
 }
 void EmpleadoServiciosProfesionales::calcularSalario(){
     EmpleadoBase::salarioNeto = EmpleadoBase::salarioBruto;
-    std::cout << "Calculando salario del empleado de planilla\n"<<EmpleadoBase::salarioNeto;
+    std::cout << EmpleadoServiciosProfesionales::getNombre()<< " | "<< EmpleadoServiciosProfesionales::getCedula() << "  | " <<EmpleadoServiciosProfesionales::salarioNeto << "\n";
 }

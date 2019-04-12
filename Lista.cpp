@@ -5,7 +5,6 @@
 
 #include <cstdlib>
 #include <iostream>
-#include <fstream>
 
 Lista::Lista() {
 	head = NULL;
@@ -16,9 +15,11 @@ void Lista::AddNode(EmpleadoBase* addData) {
 	n->empleado = addData;
 	n->next = NULL;
 	n->empleado = addData;
+        
 	if (head != NULL) {
 		curr = head;
 		while (curr->next != NULL) {
+                    curr->empleado->guardarEmpleadoEnReporte();
 			curr = curr->next;
 		}
 		curr->next = n;
@@ -29,6 +30,7 @@ void Lista::AddNode(EmpleadoBase* addData) {
 }
 
 void Lista::imprimirResultados() {
+    std::cout << "|" << "Nombre" << " | " << "Apellidos" << " | " << "  | " << "Cedula" << "  | "  << "Telefono" << " | " << "Direccion" << " | "<< "\n";
 	curr = head;
 	while (curr != NULL) {
 		curr->empleado->toString();
@@ -43,4 +45,16 @@ void Lista::calcularSalarioEmpleados() {
 		curr = curr->next;
 	}
 
+}
+void Lista::eliminarEmpleado(int cedula){
+    nodePtr  delPtr = NULL;
+    temp = head;
+    curr = head;
+    while(curr != NULL && curr->empleado->getCedula() != cedula){
+        temp = curr;
+        curr = curr->next;
+    }
+    if(curr == NULL){
+        std::cout << "Numero de cedula no encontrado" << "\n";
+    }
 }

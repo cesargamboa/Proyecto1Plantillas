@@ -9,8 +9,7 @@ void devolverMenu(){
                         std::cout<< "5 . Calcular/Mostar  pago de planilla "<<"\n";
                         std::cout<< "6 . Eliminar empleado de planilla"<<"\n";
                         std::cout<< "7 . Calcular vacaciones empleado"<<"\n";
-                        std::cout<< "8 . Mostrar Reporte de empleados"<<"\n";
-                        std::cout<< "9 . Salir"<<"\n";
+                        std::cout<< "8 . Salir"<<"\n";
 }
 
 void devolverMenuCreacionEmpleado(){
@@ -18,4 +17,11 @@ void devolverMenuCreacionEmpleado(){
                                      std::cout << "a. Servicios profecionales "<<"\n";
                                       std::cout << "b. Planilla tiempo indefinido"<<"\n";
                                        std::cout << "c. Planilla temporal"<<"\n";
+}
+void imprimirMensajeBienvenida(){
+   std::cout << "|-------Bienvenido al sistema de manejo de personal  Smart System-------|"<<"\n";
+}
+void imprimirMensajeDePagoPlanilla(){
+    std::cout << "Calculando pago de planilla de empleados "<<"\n";
+                                std:: cout << "Nombre" << " | " << "Cedula" << "|" << "Monto a pagar" << "|" << "\n";
 }
