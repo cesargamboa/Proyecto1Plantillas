@@ -8,7 +8,9 @@ void devolverMenu(){
                         std::cout<< "4. Modificar registro de empleados  "<<"\n";
                         std::cout<< "5 . Calcular/Mostar  pago de planilla "<<"\n";
                         std::cout<< "6 . Eliminar empleado de planilla"<<"\n";
-                        std::cout<< "7 . Salir"<<"\n";
+                        std::cout<< "7 . Calcular vacaciones empleado"<<"\n";
+                        std::cout<< "8 . Mostrar Reporte de empleados"<<"\n";
+                        std::cout<< "9 . Salir"<<"\n";
 }
 
 void devolverMenuCreacionEmpleado(){

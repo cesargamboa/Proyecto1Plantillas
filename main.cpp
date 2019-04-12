@@ -28,7 +28,7 @@ int main()
                     int opcion = 0;
                     std::string direccion, telefono;
                     char tipoEmp;
-                    while(opcion != 7){
+                    while(opcion != 9){
                         devolverMenu();
                         std::cin >> opcion;
                         switch (opcion)
@@ -67,6 +67,10 @@ int main()
                                 std::cout << "Calculando pago de planilla de empleados "<<"\n";
                             case 6:
                                 std::cout << "Eliminando empleado de planilla "<< "\n";
+                            case 7: 
+                                std::cout << "Calcular vacaciones empleado" << "\n";
+                                case 8: 
+                                std::cout << "Mostrando report de empleados" << "\n";
                                 default: 
                                     std::cout << "Seleccione una opcion valida";
                             }
