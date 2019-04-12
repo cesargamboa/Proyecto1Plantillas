@@ -12,8 +12,6 @@
 int main() {
     std::string nombreEmpresa;
     // Recibir beneficios por parametros ?
-    //                    EmpleadoPlanilla empleado("Cesar", 207010419, 200.0, "Gamboa", "62233121", "Heredia");
-    EmpleadoServiciosProfesionales empleado2("Franco", 1111111, 300.0, "Gamboa", "999999999", "Alajuela");
 
     imprimirMensajeBienvenida();
     std::cout << "Por favor ingrese el nombre de su empresa: \n";
@@ -21,7 +19,6 @@ int main() {
 
     Empresa systemsCompany(nombreEmpresa);
 
-    systemsCompany.agregarEmpleado(&empleado2);
 
 
     // Interfaz de usuario
@@ -47,16 +44,17 @@ int main() {
                 devolverMenuCreacionEmpleado();
                 std::cin>>tipoEmp;
                 if (tipoEmp == 'a') {
-                    systemsCompany.agregarEmpleado(new EmpleadoServiciosProfesionales("Cesar", 207010419, 200.0, "Gamboa", "62233121", "Heredia"));
+                    systemsCompany.agregarEmpleado(new EmpleadoServiciosProfesionales("Cesar", 207010419, 200.0, "Gamboa", "62233121", "Heredia", 1,2,2017, "servicios profesionales"));
                     opcion = '0';
                 }
                 if (tipoEmp == 'b') {
-                    systemsCompany.agregarEmpleado(new EmpleadoPlanilla("Maria", 207010419, 200.0, "Rosales", "62233121", "Alajuela"));
+                    // nombre, ced, salario, apellidos, telefono, direccion, isTemporalEmployee, dia, mes, a;o
+                    systemsCompany.agregarEmpleado(new EmpleadoPlanilla("Maria", 207010419, 200.0, "Rosales", "62233121", "Alajuela", 2, 2, 2019, "planilla"));
                     opcion = '0';
                 }
                 if (tipoEmp == 'c') {
                     // pasamos un bool q diga q no tiene plaza y es temporal
-                    systemsCompany.agregarEmpleado(new EmpleadoPlanilla("Celeste", 207010419, 200.0, "Godinez", "62233121", "Desamparados"));
+                    systemsCompany.agregarEmpleado(new EmpleadoPlanilla("Celeste", 207010419, 200.0, "Godinez", "62233121", "Desamparados", 2, 3, 2018, "planilla temporal"));
                     opcion = '0';
                 }
             case '4':

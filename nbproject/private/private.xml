@@ -9,12 +9,17 @@
         <group>
             <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/EmpleadoServiciosProfesionales.cpp</file>
             <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/Lista.cpp</file>
+            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/Empresa.h</file>
+            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/Lista.h</file>
+            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/Fecha.h</file>
+            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/helpers.h</file>
+            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/main.cpp</file>
+            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/helpers.cpp</file>
             <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/Fecha.cpp</file>
             <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/EmpleadoBase.h</file>
-            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/Fecha.h</file>
             <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/EmpleadoPlanilla.cpp</file>
             <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/EmpleadoBase.cpp</file>
-            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/main.cpp</file>
+            <file>file:/Users/ff_cesar/NetBeansProjects/Proyecto1Plantillas/Empresa.cpp</file>
         </group>
     </open-files>
 </project-private>

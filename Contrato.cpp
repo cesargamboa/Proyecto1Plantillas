@@ -1,15 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Contrato.cpp
- * Author: ff_cesar
- * 
- * Created on April 10, 2019, 10:21 PM
- */
 
 #include "Contrato.h"
 
@@ -35,4 +23,13 @@ void Contrato::setInicioContrato(int day, int mes, int year){
 }
 int Contrato::getBeneficios(){
     return ahorronNavideno + salarioEscolar;
+}
+void Contrato::setCodigoPuesto(std::string cod){
+    codigoPuesto = cod;
+}
+void Contrato::setPuesto(std::string position){
+    puesto = position;
+}
+void Contrato::setInicioContrato(int day, int month, int year){
+    fechaCierreContrato =  fechaInicioContrato = new Fecha(day, mes, year);
 }

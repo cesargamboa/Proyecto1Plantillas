@@ -20,7 +20,8 @@ private:
                     // identificacion unica de empleado
                     // esto para luego poder modificarlo
 public:
-	EmpleadoBase(std::string, int, double, std::string, std::string, std::string);
+    //nombre, ced, salario, apellidos, telefono, direccion , dia, mes, a;o
+    EmpleadoBase(std::string, int, double, std::string, std::string, std::string, int, int, int, std::string);
                     virtual void calcularSalario() = 0;
 	void toString();
                     void setDetallesContrato(int, int, int , std::string);
