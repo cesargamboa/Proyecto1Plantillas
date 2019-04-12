@@ -3,6 +3,7 @@
 #include "EmpleadoBase.h"
 #include "Lista.h";
 #include "Empresa.h";
+#include "helpers.h"
 #include "EmpleadoPlanilla.h"
 #include "EmpleadoServiciosProfesionales.h"
 #include <string>
@@ -23,18 +24,12 @@ int main()
                     systemsCompany.calcularSalarios();
                     
                     // Interfaz de usuario
-                    
+                    // nota: el programa crea automaticamente historial de empleados y de empleados despedidos
                     int opcion = 0;
                     std::string direccion, telefono;
                     char tipoEmp;
-                    while(opcion != 6){
-                        std::cout << "Por favor seleccione una opcion y presione Enter "<<"\n";
-                        std::cout<< "1 . Actualizar datos de la empresa "<<nombreEmpresa<<"\n";
-                        std::cout<< "2 . Mostrar Datos de la empresa "<<nombreEmpresa<<"\n";
-                        std::cout<< "3. Registrar un empleado  "<<"\n";
-                        std::cout<< "4. Modificar registro de empleado  "<<"\n";
-                        std::cout<< "5 . Calcular/Mostar  pago de planilla "<<"\n";
-                        std::cout<< "6 . Salir"<<"\n";
+                    while(opcion != 7){
+                        devolverMenu();
                         std::cin >> opcion;
                         switch (opcion)
                             {
@@ -48,10 +43,7 @@ int main()
                                 case 2: 
                                     systemsCompany.toString();
                             case 3: 
-                                    std::cout << "Que tipo de empleado desea ingresar? "<<"\n";
-                                     std::cout << "a. Servicios profecionales "<<"\n";
-                                      std::cout << "b. Planilla tiempo indefinido"<<"\n";
-                                       std::cout << "c. Planilla temporal"<<"\n";
+                                devolverMenuCreacionEmpleado();
                                        std::cin>>tipoEmp;
                                        if(tipoEmp == 'a'){
                                            systemsCompany.agregarEmpleado(new EmpleadoServiciosProfesionales("Cesar", 207010419, 200.0, "Gamboa", "62233121", "Heredia"));
@@ -69,6 +61,12 @@ int main()
                                        else{
                                            std::cout << "Opcion no valida"<<"\n";
                                        }
+                            case 4:
+                                std::cout << "Mostrando Registro de empleados: "<<"\n";
+                            case 5: 
+                                std::cout << "Calculando pago de planilla de empleados "<<"\n";
+                            case 6:
+                                std::cout << "Eliminando empleado de planilla "<< "\n";
                                 default: 
                                     std::cout << "Seleccione una opcion valida";
                             }

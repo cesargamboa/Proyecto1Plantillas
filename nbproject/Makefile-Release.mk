@@ -42,6 +42,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Empresa.o \
 	${OBJECTDIR}/Fecha.o \
 	${OBJECTDIR}/Lista.o \
+	${OBJECTDIR}/helpers.o \
 	${OBJECTDIR}/main.o
 
 
@@ -103,6 +104,11 @@ ${OBJECTDIR}/Lista.o: Lista.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Lista.o Lista.cpp
+
+${OBJECTDIR}/helpers.o: helpers.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/helpers.o helpers.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
