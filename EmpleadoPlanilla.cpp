@@ -2,8 +2,8 @@
 #include <iostream>
 
 
-EmpleadoPlanilla::EmpleadoPlanilla(std::string name, int ced, double salarioB, int identification)
-:EmpleadoBase(name, ced, salarioB, identification)
+EmpleadoPlanilla::EmpleadoPlanilla(std::string name, int ced, double salarioB, std::string ape, std::string tel, std::string dir)
+:EmpleadoBase(name, ced, salarioB, ape, tel, dir)
 {
 }
 

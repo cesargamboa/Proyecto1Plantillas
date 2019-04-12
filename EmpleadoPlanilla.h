@@ -8,7 +8,7 @@ class EmpleadoPlanilla :
                 double ahorroObligatorio = 0.02;
                 double impuestoRenta = 0.2;
 public:
-	EmpleadoPlanilla(std::string, int, double, int);
+	EmpleadoPlanilla(std::string, int, double, std::string, std::string, std::string);
 	~EmpleadoPlanilla();
                       void calcularSalario();
 };

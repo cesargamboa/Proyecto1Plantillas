@@ -12,9 +12,12 @@ private:
 	Lista listaEmpleados;
 
 public:
-	Empresa();
+	Empresa(std::string);
 	void agregarEmpleado(EmpleadoBase* empleado);
 	void mostrarListaDeEmpleados();
+                    void setDireccion(std::string);
+                    void setTelefono(std::string);
+                    void toString();
         void calcularSalarios();
 	~Empresa();
 };
